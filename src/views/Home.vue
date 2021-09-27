@@ -17,16 +17,18 @@
         </div>
       </div>
     </section>
+
+    <EventsList />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-
+import EventsList from '../components/EventsList'
 export default {
   name: 'Home',
   components: {
-
+    EventsList
   }
 }
 </script>
