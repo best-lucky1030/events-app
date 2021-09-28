@@ -24,7 +24,7 @@
         <p class="is-size-4"><strong>Category: </strong> {{event.category}}</p>
         <div class="event-images columns is-multiline has-text-centered">
           <div v-for="image in event.images" :key="image.id" class="column is-one-third">
-            <img :src="image" :alt="event.name" />
+            <img :src="`${image}`" :alt="`${event.name}`" />
           </div>
         </div>
       </div>
