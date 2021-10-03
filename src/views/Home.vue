@@ -29,6 +29,12 @@ export default {
   name: 'Home',
   components: {
     EventsList
+  },
+  methods: {
+    // Log the user in
+    login() {
+      this.$auth.loginWithRedirect();
+    }
   }
 }
 </script>
