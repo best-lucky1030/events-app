@@ -13,12 +13,12 @@ export const authGuard = (to, from, next) => {
     authService.loginWithRedirect({ appState: { targetUrl: to.fullPath } });
   };
 
-  // If loading has already finished, check the auth state using `fn()`
+  // If loading has already finished, check our auth state using `fn()`
   if (!authService.loading) {
     return fn();
   }
 
-  // Watch for the loading property to change before checking isAuthenticated
+  // Watch for the loading property to change before we check isAuthenticated
   authService.$watch("loading", loading => {
     if (loading === false) {
       return fn();
