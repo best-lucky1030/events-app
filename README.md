@@ -1,4 +1,4 @@
-# Vue Events App w/ Authentication
+# Vue Events App / Authentication
 
 This is a simple Vue website that demonstrates how to get started with Vue.js, add authentication, and restrict certain pages from users who aren't logged in. You can clone this project and follow the directions below or [check out the tutorial](https://auth0.com/blog/beginner-vuejs-tutorial-with-user-login/) where I cover all the deets step by step!
 
